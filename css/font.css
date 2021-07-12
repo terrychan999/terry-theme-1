@@ -1,0 +1,53 @@
+html {
+    font-size: 16px;
+}
+
+html * {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.17rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: .83rem;
+}
+
+h6 {
+    font-size: .67rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+/*for screen size like iPhone5*/
+@media only screen and (max-width: 350px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/*涵蓋大部分系統之中文黑體*/
+html,
+body {
+    font-family: 'Noto Sans CJK TC', 'PingFang', 'Microsoft JhengHei', sans-serif;
+}
