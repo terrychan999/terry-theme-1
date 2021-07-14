@@ -134,3 +134,6 @@ function hide_admin_bar_from_front_end() {
     return false;
 }
 add_filter( 'show_admin_bar', 'hide_admin_bar_from_front_end' );
+
+#Disable LiteSpeed Cache Comment
+add_filter( 'litespeed_comment', '__return_false' );
