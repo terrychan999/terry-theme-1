@@ -59,12 +59,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: .8rem;
     /* Footer height */
     height: 2.5rem;
-}
-
-#footer * {
-    font-size: .8rem;
 }
 
 @media screen and (max-width: 800px) {

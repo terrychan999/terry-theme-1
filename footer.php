@@ -2,9 +2,7 @@
         </main>
     </div><!-- content -->
     <footer id="footer">
-        <div class="footwrap">
-            <span id="year"><?php echo date('Y'); ?></span>&nbsp;Terry Chan.<br>
-        </div>
+        <?php echo date('Y'); ?>&nbsp;Terry Chan.
     </footer>
 </div><!-- container -->
 <?php wp_footer(); ?>
