@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html {
     background-color: #4488bb;
 }
@@ -23,8 +25,12 @@ a {
 }
 
 #content header {
-    font-size: 2.5rem;
     text-align: center;
+}
+
+#content header h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
 }
 
 #content main {
@@ -32,20 +38,19 @@ a {
 }
 
 #content main,
-#content nav {
+#content header nav,
+#content header nav ul {
     width: 50vw;
     margin-left: auto;
     margin-right: auto;
 }
 
-#content nav ul {
+#content header nav ul {
+    width: 50%;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
     list-style: none;
-}
-
-#content nav li {
-    display: inline-block;
-    margin-right: 1vw;
 }
 
 #describe {
@@ -66,12 +71,13 @@ a {
 
 @media screen and (max-width: 800px) {
 
-    #content header {
+    #content header h1 {
         font-size: 2rem;
     }
 
     #content main,
-    #content nav {
+    #content header nav,
+    #content header nav ul {
         width: 60vw;
     }
 }
@@ -82,7 +88,8 @@ a {
     }
 
     #content main,
-    #content nav {
+    #content header nav,
+    #content header nav ul {
         width: 100vw;
     }
 }
