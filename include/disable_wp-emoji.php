@@ -41,3 +41,5 @@ function disable_emojis_tinymce($plugins)
     return $plugins;
 }
 add_action('init', 'disable_emoji_feature');
+
+remove_action('wp_head', 'wp_resource_hints', 2, 99 );
