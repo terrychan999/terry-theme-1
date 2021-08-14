@@ -11,5 +11,8 @@
     <div id="content">
         <main>
         <header>
-            歡迎來到<?php bloginfo('name');?>!
+            <h1>歡迎來到<?php bloginfo('name');?>!</h1>
+            <nav>
+                <?php wp_nav_menu(); ?>
+            </nav>
         </header>
