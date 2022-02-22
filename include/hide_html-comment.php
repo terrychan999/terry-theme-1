@@ -2,7 +2,7 @@
 
 // remove html comments tags
 function callback($buffer) {
-    $buffer = preg_replace('/<!--(.|s)*?-->/', '', $buffer);
+    $buffer = preg_replace('/<!--(.|\s)*?-->/', '', $buffer);
     return $buffer;
 }
 function buffer_start() {
